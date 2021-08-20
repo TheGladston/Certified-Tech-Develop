@@ -40,9 +40,15 @@ function calculaPorcentagem(valor, porcento){
     let totalPorcentagem = dividir(valor, 100) * porcento
     return totalPorcentagem
 }
-console.log(calculaPorcentagem(350, 27.5))
 
 function geradorDePorcentagem(quantoPorcento, desseNum){
     let achaPorcento = quantoPorcento / desseNum;
     return multiplicar(achaPorcento, 100)
 }
+
+console.log ("-------------- Teste New Features / Calculadora --------------")
+
+console.log(quadradoDoNumero(10));
+console.log(mediaDeTresNumeros(10, 8, 7));
+console.log(calculaPorcentagem(450, 13.5));
+console.log(geradorDePorcentagem(7.8, 730));
