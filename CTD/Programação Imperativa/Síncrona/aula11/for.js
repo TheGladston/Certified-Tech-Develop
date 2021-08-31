@@ -47,7 +47,7 @@ let precoComTaxa = [];
 function addTaxa(precoSemTaxa) {
     for (let i = 0; i < precoSemTaxa.length; i++) {
         precoComTaxa.push(precoSemTaxa[i] * taxa);
-        console.log(precoComTaxa[i])   
+        console.log(precoComTaxa[i]) 
     }
 }
 
