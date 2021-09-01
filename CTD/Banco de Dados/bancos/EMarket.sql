@@ -3660,3 +3660,88 @@ INSERT INTO Correios (CorreioID,Empresa,Telefone) VALUES
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+
+
+
+-- CATEGORIAS E PRODUTOS
+
+-- 1) Queremos ter uma lista de todas as categorias.
+
+USE EMarket;
+
+SELECT * FROM categorias;
+
+-- 2) Como as categorias não possuem imagens, você está interessado em obter apenas um Nome e descrição da lista de categorias.
+
+select categoriaNome as Nome, descricao as Descrição from categorias;
+
+-- 3) Obtenha uma lista dos produtos.
+
+select ProdutoNome as Produtos from produtos;
+
+-- 4) Existem produtos descontinuados? (Descontinuado = 1).
+
+select descontinuado from produtos
+where descontinuado = 1;
+
+-- 5) Na sexta-feira, você deve se reunir com o fornecedor nr. 8. Quais são os produtos que eles fornecem?
+
+select produtoNome from produtos
+where provedorId = 8;
+
+-- 6) Queremos saber todos os produtos cujo preço unitário se encontra entre 10 e 22.
+
+SELECT produtoNome FROM produtos
+WHERE precoUnitario BETWEEN 10 and 22;
+
+-- 7) Fica definido que um produto deve ser solicitado ao fornecedor se suas unidades em estoque 
+-- forem inferiores ao nível de reabastecimento. Existem produtos a solicitar?
+
+select produtoNome as Produto, UnidadesEstoque as Estoque, NivelReabastecimento as Nível from produtos
+where unidadesEstoque < nivelReabastecimento;
+
+-- 8) Você quer saber todos os produtos da lista anterior, mas que as unidades pedidas sejam iguais a zero.
+
+select produtoNome as Produto, UnidadesEstoque as Estoque, NivelReabastecimento as Nível, UnidadesPedidas as Pedidos from produtos
+where unidadesEstoque < nivelReabastecimento and UnidadesPedidas = 0;
+
+
+-- CLIENTES
+
+-- 1) Obtenha uma lista de todos os clientes com contato, empresa, cargo, País. Classifique a lista por país.
+
+select contato as Contato, empresa as Empresa, titulo as Cargo, pais as País from clientes
+order by pais;
+
+-- 2) Queremos atender todos os clientes que possuem o título de  “Proprietário". Esse título estará em inglês (Owner).
+
+select contato as Nome, titulo as Cargo from clientes
+where titulo = "Owner";
+
+-- 3) A operadora de telefonia atendeu um cliente e não lembra o nome dele. Sabe apenas que começa com "C". 
+-- Podemos ajudá-lo a obter uma lista com todos os contatos que começam com a letra C?
+
+select contato as Nome from clientes
+where contato like "C%";
+
+
+-- FATURAS
+
+-- 1) Obtenha uma lista de todas as faturas, ordenadas por data da fatura em ordem ascendente.
+
+select * from faturas
+order by dataFatura asc;
+
+-- 2) Agora é necessário uma lista de faturas com o país de envio "EUA" e que a FormaeEnvio seja diferente de 3.
+
+select * from faturas
+where paisEnvio = "USA" and formaEnvio != 3;
+
+-- 3) O cliente 'GOURL' fez um pedido?
+
+select clienteId, dataEnvio from faturas
+where clienteId = "GOURL";
+
+
+-- 4) Você deseja visualizar todas as faturas dos funcionários 2, 3, 5, 8 e 9
+

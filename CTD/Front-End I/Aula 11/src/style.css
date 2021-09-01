@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-default: "Poppins", sans-serif;
+    --font-secundary: "Raleway", sans-serif;
+    --font-logo: "Leckerli One", sans-serif;
+}
+
+body {
+    background-image: url(../assets/images/bz-1.jpg);
+    background-color: rgb(29, 29, 29);
+    background-size: cover;
+    height: 100vh;
+}
+
+header {
+    width: 80%;
+    height: 140px;
+    padding-top: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.logo{ 
+    font-family: var(--font-logo);
+    font-size: 45px;
+    color: whitesmoke;
+    text-shadow: 3px 3px 6px black;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.principal {
+    width: 80%;
+    color: whitesmoke;
+    text-align: justify;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 60px;
+    margin: auto;
+    overflow: auto;
+}
+
+p{
+    font-family: var(--font-secundary);
+    line-height: 25px;
+}
+
+.video-wrapper {
+    width: 1280px;
+    height: 720px;
+    margin: auto;
+}
+
+.curiosidades {
+    width: 80%;
+    font-family: var(--font-default);
+    color: whitesmoke;
+    margin: auto;
+}
+
+.curiosidade-text {
+
+}
