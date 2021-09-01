@@ -3739,9 +3739,10 @@ where paisEnvio = "USA" and formaEnvio != 3;
 
 -- 3) O cliente 'GOURL' fez um pedido?
 
-select clienteId, dataEnvio from faturas
+select clienteId from faturas
 where clienteId = "GOURL";
 
+select nomeEnvio, clienteId from faturas;
 
 -- 4) Você deseja visualizar todas as faturas dos funcionários 2, 3, 5, 8 e 9
 
