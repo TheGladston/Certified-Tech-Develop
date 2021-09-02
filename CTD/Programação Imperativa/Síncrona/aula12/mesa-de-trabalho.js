@@ -188,9 +188,10 @@ console.log(digiteUmaPalavra("palavra"))
 
 /* 1 - Crie um vetor de caracteres de 10 posições. Insira a letra "JS" em todas as posições. */
 
-const array10JS = [];
+const array10JS = [1, 2, 3, 4 , 5, 6, 7, 8, 9, 10];
 
 for (let i = 0; i < 10; i++) {
+    array10JS.shift();
     array10JS.push("JS");
 }
 
