@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Doce Açucar</title>
+</head>
+
+<body>
+  <main class="container">
+    <section>
+      <img src="https://mir-s3-cdn-cf.behance.net/projects/404/478081104122101.Y3JvcCw2MDcsNDc1LDExMSwxNQ.png"
+        alt="Logo da Doceria">
+      <h2>Tornando a vida mais doce!</h2>
+    </section>
+
+    <br><br>
+
+    <form action="#" method="POST">
+      <fieldset>
+        <legend>DADOS PESSOAIS: </legend>
+        <br>
+        <label for="email">Email: </label>
+        <input class="inputs" type="email" name="email" id="email" placeholder="Insira seu email" required>
+        <label for="nome">Nome: </label>
+        <input class="inputs" type="text" name="nome" id="nome">
+
+        <label for="endereco">Endereço: </label>
+        <textarea class="inputs" name="endereco" id="endereco" cols="20" rows="2"></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Qual doce? </legend>
+        <select class="inputs" name="doces" id="doces">
+          <option value="">Doces Gourmet</option>
+          <optgroup label="Doces Gourmet">
+            <option value="palha">Palha italiana de leite Ninho</option>
+            <option value="doces-choc">Doces finos com chocolate</option>
+            <option value="macaron">Macaron de framboesa</option>
+          </optgroup>
+
+          <optgroup label="Doces no Pote">
+            <option value="torta-limao">Torta de limão</option>
+            <option value="torta-holandesa">Torta holandesa</option>
+            <option value="bolo-aipim-bj">Bolo de aipim com beijinho</option>
+          </optgroup>
+        </select>
+      </fieldset>
+
+      <br>
+      <br>
+
+      <fieldset>
+        <legend>Método de Pagamento</legend>
+        <div class="metodoPagamento">
+          <input type="radio" name="pagamento" id="dinheiro" checked>
+          <label for="pix">Pix</label>
+          <input type="radio" name="pagamento" id="credito">
+          <label for="credito">Crédito</label>
+          <input type="radio" name="pagamento" id="debito">
+          <label for="debito">Débito</label>
+        </div>
+      </fieldset>
+
+      <button type="submit">Fazer Pedido</button>
+      <button type="reset">Cancelar</button>
+    </form>
+  </main>
+</body>
+
+</html>
