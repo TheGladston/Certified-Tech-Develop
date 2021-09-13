@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(104, 41, 62);
+    background-color: pink;
+  }
+  
+  main{
+    text-align: center;
+  }
+
+  h2 {
+      text-transform: uppercase;
+  }
+  
+  .container{
+    padding: 0 400px;
+  }
+  
+  main img{
+    width: 300px;
+  }
+  
+  label, select{
+    display: block;
+    border: none;
+  }
+  
+  input, textarea{
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  select{
+    margin: 0px auto 15px;
+  }
+
+  input {
+      padding: 5px;
+      border-radius: 5px;
+  }
+  
+  .metodoPagamento label, .opcionais label{
+    display: inline-block;
+  }
+  
+  label{
+    margin: 0px 10px 0 0;
+  }
+  
+  button{
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background: palevioletred;
+    text-transform: uppercase;
+
+  }
+
+  fieldset {
+      border: none;
+  }
+
+.inputs {
+      width: 100%;
+  }
+
+  main {
+    text-align: center;
+    animation: mainAnimation 2s;
+  }
+
+  @keyframes mainAnimation {
+    from {
+      transform: scale(0) translateX(-100%);
+    }
+    to {
+      transform: scale(100%) translateX(0%);
+    }
+  }
