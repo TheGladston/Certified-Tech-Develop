@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    height: 1000px;
+}
+
+.nome {
+    font-family: 'Shadows Into Light';
+    font-size: 7rem;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    color: #ff00c8;
+    font-weight: 500;
+    opacity: 0;
+    animation: logoAnimation 1s 0.7s forwards, changeColor .4s 1.2s linear infinite;
+}
+
+@keyframes logoAnimation{
+    0%{
+        transform: translateY(-10rem);
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes changeColor{
+    0%{
+        color: black;
+    }
+    25%{
+        color: #02f3d3;
+    }
+    50%{
+        color: #eee;
+    }
+    100%{
+        color: #ff00c8;
+    }
+}
+
+.bola {
+    background: linear-gradient(to right, rgb(228, 228, 228), rgb(122, 122, 122));
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    animation: leftToRight 10s infinite;
+}
+
+@keyframes leftToRight {
+    from {
+        transform: translateX(500%) scale(0);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.icone {
+    width: 100%;
+    height: 200px;
+    color: skyblue;
+    text-align: center;
+    animation: animated .3s infinite;
+}
+
+.icone i {
+    font-size: 200px;
+}
+
+@keyframes animated {
+    0% {
+        transform: translateX(0%) rotate(-45deg);
+    }
+    25% {
+        transform: translateX(0%) rotate(0deg);
+    }
+    50% {
+        transform: translateX(0%) rotate(45deg);
+    }
+    75% {
+        transform: translateX(0%) rotate(0deg);
+    }
+    100% {
+        transform: translateX(0%) rotate(-45deg);
+    }
+}
+
+.container {
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.btn {
+    background: hotpink;
+    font-size: 3rem;
+    font-family: sans-serif;
+    color: whitesmoke;
+    padding: 5px 30px;
+    border-radius: 30px;
+    transition: 3s;
+    animation: smoth 3s infinite;
+}
+
+@keyframes smoth {
+    0%{
+        background: hotpink;
+    }
+    50%{
+        background: rgb(192, 16, 104);
+    }
+    100%{
+        background: rgb(65, 2, 33);
+    }
+}
