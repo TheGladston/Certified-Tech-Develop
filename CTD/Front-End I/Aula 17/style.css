@@ -19,11 +19,12 @@
   }
   
   .container{
-    padding: 0 400px;
+    padding: 50px 400px;
   }
   
   main img{
     width: 300px;
+    padding-bottom: 20px;
   }
   
   label, select{
@@ -73,7 +74,6 @@
   }
 
   main {
-    text-align: center;
     animation: mainAnimation 2s;
   }
 
@@ -83,5 +83,18 @@
     }
     to {
       transform: scale(100%) translateX(0%);
+    }
+  }
+
+.img {
+    animation: imgBreath 3s infinite;
+  }
+
+  @keyframes imgBreath {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.1);
     }
   }
