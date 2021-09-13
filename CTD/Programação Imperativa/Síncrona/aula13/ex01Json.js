@@ -17,3 +17,17 @@ console.log("Dado original em JS.....: "+dadosConvertidosJS);
 // serialização cria um formato JSON
 let dadosConvertidosJson = JSON.stringify(dadosConvertidosJS);
 console.log("Objeto convertido para JSON......"+dadosConvertidosJson);
+
+/* JSON.parse()
+Converte um texto com formato JSON ao tipo de dado equivalente em JavaScript. */
+let dadosJson = '{"cidade": "São Paulo", "bairro": "Morumbi"}';
+let dadosConvertidos = JSON.parse(dadosJson);
+
+console.log(dadosConvertidos);
+
+/* JSON.stringify()
+Converte um tipo de dado de JavaScript em um text em formato JSON. */
+let objetoLiteral = {nome: 'Carla', pais: 'Brasil'};
+let dadosConvertidos2 = JSON.stringify(objetoLiteral);
+
+console.log(dadosConvertidos2);
