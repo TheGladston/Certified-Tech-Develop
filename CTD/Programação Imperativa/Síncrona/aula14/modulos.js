@@ -25,4 +25,4 @@ let ave = {
     raca:'Calopsita'
 }
 
-module.exports = {cachorro, ave, cumprimento, soma}
+module.exports = {cachorro, ave, cumprimento, soma};
