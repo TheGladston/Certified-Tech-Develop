@@ -82,4 +82,6 @@ VALUES(06763465610, "GLADSTON", "DE PAULA", "SHCGN 705, BLOCO K, AP 305, ASA NOR
 -- Atualização de dados em uma das tabelas.
 
 UPDATE Socios SET Socios.Documento = 15166348
-WHERE Nome = "Gladston" AND Sobrenome = "DE PAULA";
+WHERE idSocios = 1;
+
+-- Exclusão de dados em uma das tabelas.
