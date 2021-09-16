@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    background: black;
+    color: whitesmoke;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+header h1::first-letter {
+    color: red;
+}
+
+header ul {
+    display: flex;
+    gap: 15px;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 5px 20px;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    display: block;
+    width: 150px;
+    text-align: center;
+    color: whitesmoke;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+}
+
+header ul li a:hover {
+    color: red;
+    border: 2px solid red;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    padding: 0 60px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.card-game img {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+    transition: all .3s ease-in-out;
+}
+
+.image-wrap {
+    height: 350px;
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid lightgray;
+}
+
+.card-game img:hover {
+    transform: scale(1.1);
+}
+
+.card-game h3 {
+    margin-top: 10px;
+}
+
+.btn {
+    width: 180px;
+    height: 35px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: black;
+    color: whitesmoke;
+}
