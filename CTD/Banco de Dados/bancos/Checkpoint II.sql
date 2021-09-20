@@ -85,3 +85,18 @@ UPDATE Socios SET Socios.Documento = 15166348
 WHERE idSocios = 1;
 
 -- Exclusão de dados em uma das tabelas.
+
+DELETE FROM Socios
+WHERE idSocios = 1;
+
+-- Seleção de dados de uma das tabelas.
+
+SELECT * FROM Autores;
+
+-- Especificar em um parágrafo seu projeto e a utilização e quais suas regras
+
+/* 
+BD para gestão de uma pseudo biblioteca, onde realiza-se cadastro de sócios, 
+editoras, autores e livros. É possível fazer a gestão de locações, com data de retirada 
+e data de devolucão, bem como quantas unidades estão disponíveis e se há danos nos livros.
+*/
