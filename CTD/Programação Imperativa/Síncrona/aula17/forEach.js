@@ -9,8 +9,8 @@ let count = 0;
 
 pessoas.forEach(
     function (pessoa, i) {
-       pratos = pessoa.concat(" ",pizza[i]);
-       console.log(pratos);
+       prato = pessoa.concat(" ",pizza[i]);
+       console.log(prato);
     }
 )
 
