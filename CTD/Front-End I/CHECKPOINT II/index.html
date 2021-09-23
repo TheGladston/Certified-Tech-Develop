@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHECKPOINT II</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>CHECKPOINT II</h1>
+        </header>
+
+        <main>
+            <form class="form-group">
+                <div class="form-item">
+                    <label for="nome" class="">Nome</label>
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                </div>
+                <div class="form-item">
+                    <label for="email" class="">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="seuemail@email.com">
+                </div>
+                <div class="form-item">
+                    <label for="telefone" class="">Telefone</label>
+                    <input type="tel" name="telefone" id="telefone" placeholder="(DDD) XXXXX-XXXX">
+                </div>
+                <div class="form-item">
+                    <label for="dataNasc" class="">Data de Nascimento</label>
+                    <input type="date" name="dataNasc" id="dataNasc" placeholder="(dd/mm/aaaa)">
+                </div>
+                <div class="form-item">
+                    <label for="cidades" class="">Escolha uma cidade</label>
+                    <select name="cidades" id="cidades">
+                        <option value="" selected disabled>Selecione uma cidade</option>
+                        <option value="Brasilia">Brasília</option>
+                        <option value="Belem">Belém</option>
+                    </select>
+                </div>
+
+                <div class="termos-uso form-termos">
+                    <h2>Termos de Uso</h2>
+                    <label class="aceito">
+                        <input name="termos" value="aceito" type="checkbox" class="input-checkbox">
+                        Tenho mais de 18 anos de idade e estou de acordo com os termos de uso.
+                    </label>
+                    <label>
+                        <input name="termos" value="declino" type="checkbox" class="input-checkbox">
+                        Não tenho mais de 18 anos de idade
+                    </label>
+                </div>
+
+                <section class="btn-section">
+                    <button class="btn" type="submit"> Enviar</button>
+                    <button class="btn" type="reset">Reset</button>
+                </section>
+            </form>
+        </main>
+
+        
+    </div>
+
+</body>
+
+</html>

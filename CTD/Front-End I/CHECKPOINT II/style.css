@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+:root {
+    --font-default: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 500px;
+    height: 800px;
+    background: #F2F2F2;
+    margin: auto;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+header {
+    margin: auto;
+    font-family: var(--font-default);
+    color: #709BA5;
+    font-weight: 700;
+    font-size: 1.75rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    width: 440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid white;
+    border-radius: 10px;
+    margin: auto;
+    padding: 1rem;
+}
+
+.form-group {
+    display: block;
+    font-family: var(--font-default);
+    
+}
+
+.form-item {
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+    line-height: 2rem;
+}
+
+.form-item label {
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #709BA5;
+    position: relative;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+.form-item input {
+    width: 400px;
+    height: 40px;
+    font-size: .8rem;
+    background: #E4E4E4;
+    border: none;
+    border-radius: 10px;
+    padding: .5rem;
+}
+
+.form-item select {
+    width: 400px;
+    height: 40px;
+    font-size: .8rem;
+    background: #E4E4E4;
+    color: #C1C1C1;
+    border: none;
+    border-radius: 10px;
+    padding: .5rem;
+}
+
+.termos-uso {
+    width: 100%;
+    margin: auto;
+}
+
+.termos-uso h2 {
+    text-align: center;
+    font-family: var(--font-default);
+    color: #709BA5;
+    margin-top: 10px;
+    padding: 10px;
+}
+.form-termos {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-termos  label {
+    padding: 1px;
+    font-family: var(--font-default);
+    font-size: 0.75rem;
+}
+
+.aceito {
+    margin-bottom: 5px;
+}
+
+.btn-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.btn-section button:first-child {
+    margin-right: 10px;
+    background: #51A5DC;
+}
+
+.btn {
+    width: 140px;
+    height: 35px;
+    background: #DC5151;
+    color: whitesmoke;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+}
