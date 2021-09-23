@@ -1,4 +1,4 @@
-let importando = require('../modulos');
+let importando = required('../modulos');
 
 console.log(importando.cachorro);
 
